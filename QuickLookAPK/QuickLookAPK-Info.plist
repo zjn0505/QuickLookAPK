@@ -15,6 +15,7 @@
 			<string>QLGenerator</string>
 			<key>LSItemContentTypes</key>
 			<array>
+				<string>dyn.ah62d4rv4ge80c6dp</string>
 				<string>com.android.package-archive</string>
 				<string>public.archive.apk</string>
 			</array>
