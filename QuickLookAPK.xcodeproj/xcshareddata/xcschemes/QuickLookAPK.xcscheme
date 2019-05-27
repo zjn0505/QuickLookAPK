@@ -79,6 +79,18 @@
             isEnabled = "NO">
          </CommandLineArgument>
          <CommandLineArgument
+            argument = "-p &quot;$HOME/Documents/project-temi/skills/b2b/app/usa/release/app-usa-release.apk&quot;"
+            isEnabled = "YES">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "-p &quot;$HOME/Documents/project-temi/skills/video/app/usa/release/tutorial-3.apk&quot;"
+            isEnabled = "NO">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "-p &quot;$HOME/Documents/project/xkcd/xkcd-Android/xkcd/release/xkcd-release.apk&quot;"
+            isEnabled = "NO">
+         </CommandLineArgument>
+         <CommandLineArgument
             argument = "-p &quot;$HOME/Desktop/xkcd-release-242.apk&quot;"
             isEnabled = "NO">
          </CommandLineArgument>
