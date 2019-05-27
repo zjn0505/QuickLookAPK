@@ -161,6 +161,14 @@ NSDictionary *permissionsMap( )
 NSData *dataFromZipPath(NSString *zipFile, NSString *pathInZip)
 {
     NSTask *task = [[NSTask alloc] init];
+    
+    if ([pathInZip hasSuffix:@".xml"]) {
+        NSRange extension = [pathInZip rangeOfString:@"xml" options:NSBackwardsSearch];
+        pathInZip = [pathInZip stringByReplacingCharactersInRange:extension withString:@"png"];
+        pathInZip = [pathInZip stringByReplacingOccurrencesOfString:@"anydpi-v26" withString:@"xxxhdpi-v4"];
+        pathInZip = [pathInZip stringByReplacingOccurrencesOfString:@"anydpi-v24" withString:@"xxxhdpi-v4"];
+    }
+    
     [task setLaunchPath:@"/usr/bin/unzip"];
     [task setArguments:[NSArray arrayWithObjects:@"-p", zipFile, pathInZip, nil]];
 
